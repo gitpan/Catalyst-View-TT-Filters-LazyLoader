@@ -1,0 +1,17 @@
+Changes
+MANIFEST
+META.yml # Will be created by "make dist"
+Makefile.PL
+README
+lib/Catalyst/View/TT/Filters/LazyLoader.pm
+lib/Catalyst/Helper/View/TT/Filters/LazyLoader.pm
+t/00-load.t
+t/boilerplate.t
+t/pod-coverage.t
+t/pod.t
+t/03_app.t
+t/lib/TestApp.pm
+t/lib/TestApp/Controller/Root.pm
+t/lib/TestApp/TTFilters.pm
+t/lib/TestApp/View/TT.pm
+t/lib/root/test.tt

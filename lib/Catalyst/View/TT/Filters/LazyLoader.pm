@@ -4,7 +4,7 @@ use strict;
 use base qw(Catalyst::View::TT);
 use Template::Filters::LazyLoader 0.04;
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 sub new {
     my ($class, $c, $arguments) = @_;
@@ -58,7 +58,7 @@ Catalyst::View::TT::Filters::LazyLoader - TT View Class with Template::Filters::
  
  __PACKAGE__->config({
     FILTERS_LAZYLOADER => {
-        pkg => 'MyApp::TT::Filters',
+        pkg => 'MyApp::TTFilters',
     },
  });
 

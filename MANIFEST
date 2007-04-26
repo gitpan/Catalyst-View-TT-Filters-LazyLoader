@@ -1,6 +1,5 @@
 Changes
 MANIFEST
-META.yml # Will be created by "make dist"
 Makefile.PL
 README
 lib/Catalyst/View/TT/Filters/LazyLoader.pm
@@ -15,3 +14,4 @@ t/lib/TestApp/Controller/Root.pm
 t/lib/TestApp/TTFilters.pm
 t/lib/TestApp/View/TT.pm
 t/lib/root/test.tt
+META.yml                                 Module meta-data (added by MakeMaker)

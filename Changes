@@ -1,5 +1,8 @@
 Revision history for Catalyst-View-TT-Filters-LazyLoader
 
+0.03    2007-04-26/21:24
+        Add prereq.
+
 0.02    2007-04-26/09:05
         Fix Helper package.
 

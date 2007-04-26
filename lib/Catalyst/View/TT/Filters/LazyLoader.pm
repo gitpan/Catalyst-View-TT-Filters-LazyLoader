@@ -4,7 +4,7 @@ use strict;
 use base qw(Catalyst::View::TT);
 use Template::Filters::LazyLoader 0.04;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 sub new {
     my ($class, $c, $arguments) = @_;
@@ -47,7 +47,7 @@ Catalyst::View::TT::Filters::LazyLoader - TT View Class with Template::Filters::
 
 =head1 VESION
 
-0.01
+0.02
 
 =head1 SYNOPSYS
 
@@ -74,7 +74,7 @@ this class override new().
 
 =head1 SEE ALSO
 
- L<Template::Filters::LazyLoader>
+L<Template::Filters::LazyLoader>
 
 =head1 AUTHOR
 

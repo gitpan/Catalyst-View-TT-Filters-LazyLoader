@@ -59,7 +59,7 @@ __PACKAGE__->config(
 
 =head1 DESCRIPTION
 
-TT::Filters::LazyLoader View for [% app %]
+L<Template::Filters::LazyLoader> View for [% app %]
 
 =head1 AUTHOR
 
@@ -77,7 +77,7 @@ it under the same terms as Perl itself.
 =cut
 
 __lazy__
-package [% app %]::TT::Filters;
+package [% app %]::TTFilters;
 
 use strict;
 use warnings;
@@ -86,7 +86,7 @@ use warnings;
 
 =head1 NAME
 
-[% app %]::TT::Filters -  L<Template::Filters::LazyLoader> Filters class
+[% app %]::TTFilters -  L<Template::Filters::LazyLoader> Filters class
 
 =head1 DESCRIPTION
 

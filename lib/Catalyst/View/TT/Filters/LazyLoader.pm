@@ -4,7 +4,7 @@ use strict;
 use base qw(Catalyst::View::TT);
 use Template::Filters::LazyLoader 0.04;
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 sub new {
     my ($class, $c, $arguments) = @_;

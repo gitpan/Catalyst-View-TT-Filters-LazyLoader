@@ -13,6 +13,7 @@ WriteMakefile(
         'Template::Filters::LazyLoader' => 0.04,
         'Catalyst'                      => 5.7,
         'Catalyst::View::TT'            => 0,
+        'Catalyst::Action::RenderView'  => 0, 
     },
     dist                => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     clean               => { FILES => 'Catalyst-View-TT-Filters-LazyLoader-*' },

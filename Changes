@@ -1,6 +1,9 @@
 Revision history for Catalyst-View-TT-Filters-LazyLoader
 
-0.05    2007-06-07/16:00
+0.06    2007-05-10/01:06
+        support pkgs .
+
+0.05    2007-05-07/16:00
         add Catalyst::Action::RenderView as prereq 
 
 0.04    2007-05-03/00:59

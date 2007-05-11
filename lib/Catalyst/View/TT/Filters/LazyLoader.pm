@@ -2,9 +2,9 @@ package Catalyst::View::TT::Filters::LazyLoader;
 
 use strict;
 use base qw(Catalyst::View::TT);
-use Template::Filters::LazyLoader 0.04;
+use Template::Filters::LazyLoader 0.05;
 
-our $VERSION = '0.05';
+our $VERSION = '0.06';
 
 sub new {
     my ($class, $c, $arguments) = @_;
@@ -15,8 +15,14 @@ sub new {
     if ( $config->{base_pkg} ) {
         $lazy->base_pkg( $config->{base_pkg} );
     }
-    else {
+    elsif( $config->{pkg} ) {
         $lazy->pkg( $config->{pkg}  );
+    }
+    elsif( $config->{pkgs} ) {
+        $lazy->pkgs( $config->{pkgs}  );
+    }
+    else {
+        die 'please set base_pkg or pkg or pkgs';
     }
 
     if ( defined $config->{static_filter_prefix} ) {

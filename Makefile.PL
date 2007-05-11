@@ -10,7 +10,7 @@ WriteMakefile(
     PL_FILES            => {},
     PREREQ_PM => {
         'Test::More'                    => 0,
-        'Template::Filters::LazyLoader' => 0.04,
+        'Template::Filters::LazyLoader' => 0.05,
         'Catalyst'                      => 5.7,
         'Catalyst::View::TT'            => 0,
         'Catalyst::Action::RenderView'  => 0, 

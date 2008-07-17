@@ -26,7 +26,13 @@ our $VERSION = '0.01';
 # with a external configuration file acting as an override for
 # local deployment.
 
-__PACKAGE__->config( name => 'TestApp' );
+__PACKAGE__->config( {
+    'View::TT' => {
+        FILTERS_LAZYLOADER => {
+            pkg => 'TestApp::TTFilters',
+        },
+    }
+});
 
 
 

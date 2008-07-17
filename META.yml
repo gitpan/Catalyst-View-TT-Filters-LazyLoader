@@ -1,15 +1,17 @@
-# http://module-build.sourceforge.net/META-spec.html
-#XXXXXXX This is a prototype!!!  It will change in the future!!! XXXXX#
-name:         Catalyst-View-TT-Filters-LazyLoader
-version:      0.06
-version_from: lib/Catalyst/View/TT/Filters/LazyLoader.pm
-installdirs:  site
-requires:
-    Catalyst:                      5.7
-    Catalyst::Action::RenderView:  0
-    Catalyst::View::TT:            0
-    Template::Filters::LazyLoader: 0.05
-    Test::More:                    0
-
+abstract: TT View Class with Template::Filters::LazyLoader support.
+author: Tomohiro Teranishi <tomohiro.teranishi@gmail.com>
 distribution_type: module
-generated_by: ExtUtils::MakeMaker version 6.30
+generated_by: Module::Install version 0.64
+license: perl
+name: Catalyst-View-TT-Filters-LazyLoader
+no_index: 
+  directory: 
+    - inc
+    - t
+requires: 
+  Catalyst: 5.7
+  Catalyst::Action::RenderView: 0
+  Catalyst::View::TT: 0
+  Template::Filters::LazyLoader: 0.05
+  Test::More: 0
+version: 0.07

@@ -1,20 +1,16 @@
 use strict;
 use warnings;
-use ExtUtils::MakeMaker;
+use inc::Module::Install;
 
-WriteMakefile(
-    NAME                => 'Catalyst::View::TT::Filters::LazyLoader',
-    AUTHOR              => 'Tomohiro Teranishi <tomohiro.teranishi@gmail.com>',
-    VERSION_FROM        => 'lib/Catalyst/View/TT/Filters/LazyLoader.pm',
-    ABSTRACT_FROM       => 'lib/Catalyst/View/TT/Filters/LazyLoader.pm',
-    PL_FILES            => {},
-    PREREQ_PM => {
-        'Test::More'                    => 0,
-        'Template::Filters::LazyLoader' => 0.05,
-        'Catalyst'                      => 5.7,
-        'Catalyst::View::TT'            => 0,
-        'Catalyst::Action::RenderView'  => 0, 
-    },
-    dist                => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
-    clean               => { FILES => 'Catalyst-View-TT-Filters-LazyLoader-*' },
-);
+name 'Catalyst-View-TT-Filters-LazyLoader';
+author 'Tomohiro Teranishi <tomohiro.teranishi@gmail.com>';
+all_from 'lib/Catalyst/View/TT/Filters/LazyLoader.pm';
+requires 'Test::More'            => 0;
+requires  'Template::Filters::LazyLoader' => 0.05;
+requires  'Catalyst'                      => 5.7;
+requires 'Catalyst::View::TT'            => 0;
+requires 'Catalyst::Action::RenderView'  => 0;
+license 'perl';
+auto_install;
+WriteAll;
+
